@@ -53,6 +53,7 @@ namespace DeweyDecimalClassification
             this.identifyArea.TabIndex = 1;
             this.identifyArea.Text = "Identifying Areas";
             this.identifyArea.UseVisualStyleBackColor = true;
+            this.identifyArea.Click += new System.EventHandler(this.identifyArea_Click);
             // 
             // findCallNos
             // 
@@ -62,6 +63,7 @@ namespace DeweyDecimalClassification
             this.findCallNos.TabIndex = 2;
             this.findCallNos.Text = "Finding Call Numbers";
             this.findCallNos.UseVisualStyleBackColor = true;
+            this.findCallNos.Click += new System.EventHandler(this.findCallNos_Click);
             // 
             // label1
             // 

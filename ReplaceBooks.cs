@@ -187,5 +187,10 @@ namespace DeweyDecimalClassification
             sortedNos.Clear();
             
         }
+
+        private void ltbArrange_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

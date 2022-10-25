@@ -25,5 +25,17 @@ namespace DeweyDecimalClassification
             Close();
         }
 
+        private void identifyArea_Click(object sender, EventArgs e)
+        {
+            Hide();
+            IdentifyAreas ia = new IdentifyAreas();
+            ia.ShowDialog();
+            Close();
+        }
+
+        private void findCallNos_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Coming Soon!!!");
+        }
     }
 }
