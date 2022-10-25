@@ -102,7 +102,6 @@ namespace DeweyDecimalClassification
             this.cmbNo3.Name = "cmbNo3";
             this.cmbNo3.Size = new System.Drawing.Size(182, 36);
             this.cmbNo3.TabIndex = 9;
-            this.cmbNo3.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // cmbNo4
             // 
@@ -144,7 +143,7 @@ namespace DeweyDecimalClassification
             this.btnMatch.TabIndex = 14;
             this.btnMatch.Text = "Match!";
             this.btnMatch.UseVisualStyleBackColor = true;
-            this.btnMatch.Click += new System.EventHandler(this.button1_Click);
+            this.btnMatch.Click += new System.EventHandler(this.btnMatch_Click);
             // 
             // lblHeading
             // 

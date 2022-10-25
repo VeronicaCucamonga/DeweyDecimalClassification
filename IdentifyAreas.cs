@@ -110,7 +110,7 @@ namespace DeweyDecimalClassification
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnMatch_Click(object sender, EventArgs e)
         {
             //----------CODE ATTRIBUTION----------
             //Name: How to get selected text and selected value of comboBox in C#
@@ -290,10 +290,6 @@ namespace DeweyDecimalClassification
             }
         }
 
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
     
 }
