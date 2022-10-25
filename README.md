@@ -23,8 +23,9 @@ cloned.
 4: Click the green play button on the top and you can start the application. 
 
 How to Use the Project:
-1: You will be shown the welcome page, displaying 3 buttons. The main task we will be focusing on is the "Replacing Books" function. Click on it.
+1: You will be shown the welcome page, displaying 3 buttons. The main task we will be focusing on is the "Replacing Books" function and "Identifying Task". Click on it.
 
+Replacing Books:
 2: A new form will load displaying a listbox of 10 randomly generated call numbers. Another listbox will be next to the original listbox. And two buttons
 inbetween the two listboxes. The ">>" button allows you to move one or more items from the first listbox to the second listbox and the "<<" button allows you 
 to move one or more items from the second listbox to the first listbox. These buttons will help you rearrange the order of the call numbers.
@@ -34,3 +35,17 @@ numbers for you to double check your rearranged order against to make sure there
 
 4: Afterwards you rearrange your call numbers and double check them. You may click the save button. Just incase the order is not right. It will ask you to try
 again once more until it is right. Once you get it right you get to recieve 10 points and a new set of generated call numbers are displayed. 
+
+Identifying Areas:
+5. Once you click on the identifying areas button you will be presented with a new form. In this form you will view on the left-hand side, two listboxes: 
+one for 4 call numbers and another for 7 descriptions. 
+
+6: On the right-hand side you will see 8 combo boxes: 4 for call numbers and 4 for descriptions. This will be used to match your call numbers and
+descriptions together. 
+
+7: Once you match your call numbers and descriptions if your answers are incorrect it will ask you to try again. If your answers are correct you will recieve 
+4 points for getting them all correct and it will automatically restart for you to match the descriptions and call numbers again. 
+
+Finding Call Numbers:
+8: When Finding call numbers is clicked it displays a message box saying "coming soon"
+
