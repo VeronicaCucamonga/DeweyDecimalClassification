@@ -36,7 +36,12 @@ namespace DeweyDecimalClassification
 
         private void IdentifyAreas_Load(object sender, EventArgs e)
         {
-            //stores the identify areas into dictionary
+            //----------CODE ATTRIBUTION----------
+            //Name: PROG7312 - Dictionary
+            //Publisher: VCSOIT
+            //Date: 16 September 2020
+            //URL: https://youtu.be/KTtcPbhpOtE
+            //This code preforms storing the identify areas into dictionary
             areas.Add("000", "General Knowledge");
             areas.Add("100", "Philosophy & Psycology");
             areas.Add("200", "Religion");
@@ -47,6 +52,7 @@ namespace DeweyDecimalClassification
             areas.Add("700", "Arts & Recreation");
             areas.Add("800", "Literature");
             areas.Add("900", "History & Geography");
+            //----------CODE ATTRIBUTION ENDS----------
 
             //loops through the callNo list to get 4 random call numbers and their descriptions. 
             for (int i = 0; i < 4; i++)
@@ -54,7 +60,7 @@ namespace DeweyDecimalClassification
                 //randomly picks number from callNo List
                 int number = random.Next(callNos.Count);
                 //adds it to the list box
-                listBox1.Items.Add(callNos[number]);
+                lsbCallNumbers.Items.Add(callNos[number]);
 
                 //finds the value using the key in the dictionary and adds it to generated description list
                 generatedDesc.Add(areas[callNos[number]]);
@@ -66,10 +72,10 @@ namespace DeweyDecimalClassification
                 generatedCallNo.Add(callNos[number]);
 
                 //adds to comboboxes
-                comboBox1.Items.Add(callNos[number]);
-                comboBox3.Items.Add(callNos[number]);
-                comboBox4.Items.Add(callNos[number]);
-                comboBox5.Items.Add(callNos[number]);
+                cmbNo1.Items.Add(callNos[number]);
+                cmbNo2.Items.Add(callNos[number]);
+                cmbNo3.Items.Add(callNos[number]);
+                cmbNo4.Items.Add(callNos[number]);
 
                 //removes call number from the callNo list to avoid repetition
                 callNos.Remove(callNos[number]);
@@ -89,13 +95,13 @@ namespace DeweyDecimalClassification
             {
                 //displays it  without repetition in the list box 
                 int description = random.Next(generatedDesc.Count);
-                listBox2.Items.Add(generatedDesc[description]);
+                lsbDescriptions.Items.Add(generatedDesc[description]);
 
                 //adds it to the combo boxes
-                comboBox2.Items.Add(generatedDesc[description]);
-                comboBox6.Items.Add(generatedDesc[description]);
-                comboBox7.Items.Add(generatedDesc[description]);
-                comboBox8.Items.Add(generatedDesc[description]);
+                cmbDesc1.Items.Add(generatedDesc[description]);
+                cmbDesc2.Items.Add(generatedDesc[description]);
+                cmbDesc3.Items.Add(generatedDesc[description]);
+                cmbDesc4.Items.Add(generatedDesc[description]);
 
                 //removes it to avoid repitition
                 generatedDesc.Remove(generatedDesc[description]);
@@ -106,15 +112,21 @@ namespace DeweyDecimalClassification
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //gets the combobox selected text
-            string call1 = comboBox1.GetItemText(comboBox1.SelectedItem);
-            string call2 = comboBox3.GetItemText(comboBox3.SelectedItem);
-            string call3 = comboBox4.GetItemText(comboBox4.SelectedItem);
-            string call4 = comboBox5.GetItemText(comboBox5.SelectedItem);
-            string desc1 = comboBox2.GetItemText(comboBox2.SelectedItem);
-            string desc2 = comboBox6.GetItemText(comboBox6.SelectedItem);
-            string desc3 = comboBox7.GetItemText(comboBox7.SelectedItem);
-            string desc4 = comboBox8.GetItemText(comboBox8.SelectedItem);
+            //----------CODE ATTRIBUTION----------
+            //Name: How to get selected text and selected value of comboBox in C#
+            //Publisher: Programming for Everybody
+            //Date: 18 October 2021
+            //URL: https://youtu.be/18Z9v7jkERw
+            //This code preforms getting the combobox selected text
+            string call1 = cmbNo1.GetItemText(cmbNo1.SelectedItem);
+            string call2 = cmbNo2.GetItemText(cmbNo2.SelectedItem);
+            string call3 = cmbNo3.GetItemText(cmbNo3.SelectedItem);
+            string call4 = cmbNo4.GetItemText(cmbNo4.SelectedItem);
+            string desc1 = cmbDesc1.GetItemText(cmbDesc1.SelectedItem);
+            string desc2 = cmbDesc2.GetItemText(cmbDesc2.SelectedItem);
+            string desc3 = cmbDesc3.GetItemText(cmbDesc3.SelectedItem);
+            string desc4 = cmbDesc4.GetItemText(cmbDesc4.SelectedItem);
+            //----------CODE ATTRIBUTION ENDS----------
 
             //error handling if combobox is null
             if (call1.Equals("") || call2.Equals("") || call3.Equals("") || call4.Equals("") || desc1.Equals("") ||
@@ -174,26 +186,26 @@ namespace DeweyDecimalClassification
                     lblScore.Text = Convert.ToString(points);
 
                     //clears listbox items
-                    listBox1.Items.Clear();
-                    listBox2.Items.Clear();
+                    lsbCallNumbers.Items.Clear();
+                    lsbDescriptions.Items.Clear();
                     //clears combobox items
-                    comboBox1.Items.Clear();
-                    comboBox2.Items.Clear();
-                    comboBox3.Items.Clear();
-                    comboBox4.Items.Clear();
-                    comboBox5.Items.Clear();
-                    comboBox6.Items.Clear();
-                    comboBox7.Items.Clear();
-                    comboBox8.Items.Clear();
+                    cmbNo1.Items.Clear();
+                    cmbDesc1.Items.Clear();
+                    cmbNo2.Items.Clear();
+                    cmbNo3.Items.Clear();
+                    cmbNo4.Items.Clear();
+                    cmbDesc2.Items.Clear();
+                    cmbDesc3.Items.Clear();
+                    cmbDesc4.Items.Clear();
                     //clears the combobox text
-                    comboBox1.ResetText();
-                    comboBox2.ResetText();
-                    comboBox3.ResetText();
-                    comboBox4.ResetText();
-                    comboBox5.ResetText();
-                    comboBox6.ResetText();
-                    comboBox7.ResetText();
-                    comboBox8.ResetText();
+                    cmbNo1.ResetText();
+                    cmbDesc1.ResetText();
+                    cmbNo2.ResetText();
+                    cmbNo3.ResetText();
+                    cmbNo4.ResetText();
+                    cmbDesc2.ResetText();
+                    cmbDesc3.ResetText();
+                    cmbDesc4.ResetText();
                     //clears the dictionary and lists
                     callNos.Clear();
                     desc.Clear();
@@ -230,7 +242,7 @@ namespace DeweyDecimalClassification
                 //randomly picks number from callNo List
                 int number = random.Next(callNos.Count);
                 //adds it to the list box
-                listBox1.Items.Add(callNos[number]);
+                lsbCallNumbers.Items.Add(callNos[number]);
 
                 //finds the value using key in the dictionary
                 generatedDesc.Add(areas[callNos[number]]);
@@ -242,10 +254,10 @@ namespace DeweyDecimalClassification
                 generatedCallNo.Add(callNos[number]);
 
                 //adds to combobox
-                comboBox1.Items.Add(callNos[number]);
-                comboBox3.Items.Add(callNos[number]);
-                comboBox4.Items.Add(callNos[number]);
-                comboBox5.Items.Add(callNos[number]);
+                cmbNo1.Items.Add(callNos[number]);
+                cmbNo2.Items.Add(callNos[number]);
+                cmbNo3.Items.Add(callNos[number]);
+                cmbNo4.Items.Add(callNos[number]);
 
                 //removes call number from the callNo list to avoid repetition
                 callNos.Remove(callNos[number]);
@@ -265,19 +277,23 @@ namespace DeweyDecimalClassification
             {
                 //displays it  without repetition in the list box 
                 int description = random.Next(generatedDesc.Count);
-                listBox2.Items.Add(generatedDesc[description]);
+                lsbDescriptions.Items.Add(generatedDesc[description]);
 
                 //adds it to the combo boxes
-                comboBox2.Items.Add(generatedDesc[description]);
-                comboBox6.Items.Add(generatedDesc[description]);
-                comboBox7.Items.Add(generatedDesc[description]);
-                comboBox8.Items.Add(generatedDesc[description]);
+                cmbDesc1.Items.Add(generatedDesc[description]);
+                cmbDesc2.Items.Add(generatedDesc[description]);
+                cmbDesc3.Items.Add(generatedDesc[description]);
+                cmbDesc4.Items.Add(generatedDesc[description]);
 
                 //removes it to avoid repitition
                 generatedDesc.Remove(generatedDesc[description]);
             }
         }
 
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

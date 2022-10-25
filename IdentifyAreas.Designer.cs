@@ -29,121 +29,122 @@ namespace DeweyDecimalClassification
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lsbCallNumbers = new System.Windows.Forms.ListBox();
+            this.lsbDescriptions = new System.Windows.Forms.ListBox();
+            this.cmbNo1 = new System.Windows.Forms.ComboBox();
+            this.cmbDesc1 = new System.Windows.Forms.ComboBox();
+            this.cmbNo2 = new System.Windows.Forms.ComboBox();
+            this.cmbNo3 = new System.Windows.Forms.ComboBox();
+            this.cmbNo4 = new System.Windows.Forms.ComboBox();
+            this.cmbDesc2 = new System.Windows.Forms.ComboBox();
+            this.cmbDesc3 = new System.Windows.Forms.ComboBox();
+            this.cmbDesc4 = new System.Windows.Forms.ComboBox();
+            this.btnMatch = new System.Windows.Forms.Button();
             this.lblHeading = new System.Windows.Forms.Label();
             this.lblNumber = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.gpbMatch = new System.Windows.Forms.GroupBox();
+            this.lblMatchDesc = new System.Windows.Forms.Label();
+            this.lblMatchNo = new System.Windows.Forms.Label();
             this.lblPoints = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.gpbMatch.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lsbCallNumbers
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(49, 205);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.listBox1.Size = new System.Drawing.Size(222, 229);
-            this.listBox1.TabIndex = 4;
+            this.lsbCallNumbers.FormattingEnabled = true;
+            this.lsbCallNumbers.ItemHeight = 25;
+            this.lsbCallNumbers.Location = new System.Drawing.Point(49, 205);
+            this.lsbCallNumbers.Name = "lsbCallNumbers";
+            this.lsbCallNumbers.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.lsbCallNumbers.Size = new System.Drawing.Size(222, 229);
+            this.lsbCallNumbers.TabIndex = 4;
             // 
-            // listBox2
+            // lsbDescriptions
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 25;
-            this.listBox2.Location = new System.Drawing.Point(309, 205);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.listBox2.Size = new System.Drawing.Size(222, 279);
-            this.listBox2.TabIndex = 5;
+            this.lsbDescriptions.FormattingEnabled = true;
+            this.lsbDescriptions.ItemHeight = 25;
+            this.lsbDescriptions.Location = new System.Drawing.Point(309, 205);
+            this.lsbDescriptions.Name = "lsbDescriptions";
+            this.lsbDescriptions.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.lsbDescriptions.Size = new System.Drawing.Size(222, 279);
+            this.lsbDescriptions.TabIndex = 5;
             // 
-            // comboBox1
+            // cmbNo1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(18, 116);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(182, 36);
-            this.comboBox1.TabIndex = 6;
+            this.cmbNo1.FormattingEnabled = true;
+            this.cmbNo1.Location = new System.Drawing.Point(18, 116);
+            this.cmbNo1.Name = "cmbNo1";
+            this.cmbNo1.Size = new System.Drawing.Size(182, 36);
+            this.cmbNo1.TabIndex = 6;
             // 
-            // comboBox2
+            // cmbDesc1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(257, 116);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(208, 36);
-            this.comboBox2.TabIndex = 7;
+            this.cmbDesc1.FormattingEnabled = true;
+            this.cmbDesc1.Location = new System.Drawing.Point(257, 116);
+            this.cmbDesc1.Name = "cmbDesc1";
+            this.cmbDesc1.Size = new System.Drawing.Size(208, 36);
+            this.cmbDesc1.TabIndex = 7;
             // 
-            // comboBox3
+            // cmbNo2
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(18, 185);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(182, 36);
-            this.comboBox3.TabIndex = 8;
+            this.cmbNo2.FormattingEnabled = true;
+            this.cmbNo2.Location = new System.Drawing.Point(18, 185);
+            this.cmbNo2.Name = "cmbNo2";
+            this.cmbNo2.Size = new System.Drawing.Size(182, 36);
+            this.cmbNo2.TabIndex = 8;
             // 
-            // comboBox4
+            // cmbNo3
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(18, 258);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(182, 36);
-            this.comboBox4.TabIndex = 9;
+            this.cmbNo3.FormattingEnabled = true;
+            this.cmbNo3.Location = new System.Drawing.Point(18, 258);
+            this.cmbNo3.Name = "cmbNo3";
+            this.cmbNo3.Size = new System.Drawing.Size(182, 36);
+            this.cmbNo3.TabIndex = 9;
+            this.cmbNo3.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
-            // comboBox5
+            // cmbNo4
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(18, 331);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(182, 36);
-            this.comboBox5.TabIndex = 10;
+            this.cmbNo4.FormattingEnabled = true;
+            this.cmbNo4.Location = new System.Drawing.Point(18, 331);
+            this.cmbNo4.Name = "cmbNo4";
+            this.cmbNo4.Size = new System.Drawing.Size(182, 36);
+            this.cmbNo4.TabIndex = 10;
             // 
-            // comboBox6
+            // cmbDesc2
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(257, 185);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(208, 36);
-            this.comboBox6.TabIndex = 11;
+            this.cmbDesc2.FormattingEnabled = true;
+            this.cmbDesc2.Location = new System.Drawing.Point(257, 185);
+            this.cmbDesc2.Name = "cmbDesc2";
+            this.cmbDesc2.Size = new System.Drawing.Size(208, 36);
+            this.cmbDesc2.TabIndex = 11;
             // 
-            // comboBox7
+            // cmbDesc3
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(257, 258);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(208, 36);
-            this.comboBox7.TabIndex = 12;
+            this.cmbDesc3.FormattingEnabled = true;
+            this.cmbDesc3.Location = new System.Drawing.Point(257, 258);
+            this.cmbDesc3.Name = "cmbDesc3";
+            this.cmbDesc3.Size = new System.Drawing.Size(208, 36);
+            this.cmbDesc3.TabIndex = 12;
             // 
-            // comboBox8
+            // cmbDesc4
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(257, 331);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(208, 36);
-            this.comboBox8.TabIndex = 13;
+            this.cmbDesc4.FormattingEnabled = true;
+            this.cmbDesc4.Location = new System.Drawing.Point(257, 331);
+            this.cmbDesc4.Name = "cmbDesc4";
+            this.cmbDesc4.Size = new System.Drawing.Size(208, 36);
+            this.cmbDesc4.TabIndex = 13;
             // 
-            // button1
+            // btnMatch
             // 
-            this.button1.Location = new System.Drawing.Point(214, 385);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 37);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Match!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnMatch.Location = new System.Drawing.Point(214, 385);
+            this.btnMatch.Name = "btnMatch";
+            this.btnMatch.Size = new System.Drawing.Size(112, 37);
+            this.btnMatch.TabIndex = 14;
+            this.btnMatch.Text = "Match!";
+            this.btnMatch.UseVisualStyleBackColor = true;
+            this.btnMatch.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblHeading
             // 
@@ -175,46 +176,46 @@ namespace DeweyDecimalClassification
             this.lblDesc.TabIndex = 18;
             this.lblDesc.Text = "Descriptions:";
             // 
-            // groupBox1
+            // gpbMatch
             // 
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.comboBox5);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox6);
-            this.groupBox1.Controls.Add(this.comboBox7);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.comboBox8);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(589, 131);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(498, 437);
-            this.groupBox1.TabIndex = 19;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Match the numbers and description!";
+            this.gpbMatch.Controls.Add(this.lblMatchDesc);
+            this.gpbMatch.Controls.Add(this.lblMatchNo);
+            this.gpbMatch.Controls.Add(this.cmbNo1);
+            this.gpbMatch.Controls.Add(this.btnMatch);
+            this.gpbMatch.Controls.Add(this.cmbNo4);
+            this.gpbMatch.Controls.Add(this.cmbDesc1);
+            this.gpbMatch.Controls.Add(this.cmbDesc2);
+            this.gpbMatch.Controls.Add(this.cmbDesc3);
+            this.gpbMatch.Controls.Add(this.cmbNo2);
+            this.gpbMatch.Controls.Add(this.cmbNo3);
+            this.gpbMatch.Controls.Add(this.cmbDesc4);
+            this.gpbMatch.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gpbMatch.Location = new System.Drawing.Point(589, 131);
+            this.gpbMatch.Name = "gpbMatch";
+            this.gpbMatch.Size = new System.Drawing.Size(498, 437);
+            this.gpbMatch.TabIndex = 19;
+            this.gpbMatch.TabStop = false;
+            this.gpbMatch.Text = "Match the numbers and description!";
             // 
-            // label2
+            // lblMatchDesc
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(257, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 25);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Descriptions:";
+            this.lblMatchDesc.AutoSize = true;
+            this.lblMatchDesc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMatchDesc.Location = new System.Drawing.Point(257, 64);
+            this.lblMatchDesc.Name = "lblMatchDesc";
+            this.lblMatchDesc.Size = new System.Drawing.Size(114, 25);
+            this.lblMatchDesc.TabIndex = 19;
+            this.lblMatchDesc.Text = "Descriptions:";
             // 
-            // label1
+            // lblMatchNo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(18, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 25);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Call Numbers:";
+            this.lblMatchNo.AutoSize = true;
+            this.lblMatchNo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMatchNo.Location = new System.Drawing.Point(18, 64);
+            this.lblMatchNo.Name = "lblMatchNo";
+            this.lblMatchNo.Size = new System.Drawing.Size(122, 25);
+            this.lblMatchNo.TabIndex = 18;
+            this.lblMatchNo.Text = "Call Numbers:";
             // 
             // lblPoints
             // 
@@ -246,37 +247,37 @@ namespace DeweyDecimalClassification
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.lblHeading);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lsbDescriptions);
+            this.Controls.Add(this.lsbCallNumbers);
+            this.Controls.Add(this.gpbMatch);
             this.Name = "IdentifyAreas";
             this.Text = "IdentifyAreas";
             this.Load += new System.EventHandler(this.IdentifyAreas_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gpbMatch.ResumeLayout(false);
+            this.gpbMatch.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox lsbCallNumbers;
+        private System.Windows.Forms.ListBox lsbDescriptions;
+        private System.Windows.Forms.ComboBox cmbNo1;
+        private System.Windows.Forms.ComboBox cmbDesc1;
+        private System.Windows.Forms.ComboBox cmbNo2;
+        private System.Windows.Forms.ComboBox cmbNo3;
+        private System.Windows.Forms.ComboBox cmbNo4;
+        private System.Windows.Forms.ComboBox cmbDesc2;
+        private System.Windows.Forms.ComboBox cmbDesc3;
+        private System.Windows.Forms.ComboBox cmbDesc4;
+        private System.Windows.Forms.Button btnMatch;
         private System.Windows.Forms.Label lblHeading;
         private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.Label lblDesc;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox gpbMatch;
+        private System.Windows.Forms.Label lblMatchDesc;
+        private System.Windows.Forms.Label lblMatchNo;
         private System.Windows.Forms.Label lblPoints;
         private System.Windows.Forms.Label lblScore;
     }
