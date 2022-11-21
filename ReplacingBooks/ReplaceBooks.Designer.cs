@@ -199,6 +199,7 @@ namespace DeweyDecimalClassification
             // 
             // ReplaceBooks
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1125, 608);
@@ -215,7 +216,7 @@ namespace DeweyDecimalClassification
             this.Controls.Add(this.grpArrange);
             this.Controls.Add(this.gpbCheck);
             this.Name = "ReplaceBooks";
-            this.Text = "ReplaceBooks";
+            this.Text = "Replacing Books";
             this.Load += new System.EventHandler(this.ReplaceBooks_Load);
             this.grpArrange.ResumeLayout(false);
             this.grpArrange.PerformLayout();
