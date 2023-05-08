@@ -47,5 +47,13 @@ descriptions together.
 4 points for getting them all correct and it will automatically restart for you to match the descriptions and call numbers again. 
 
 Finding Call Numbers:
-8: When Finding call numbers is clicked it displays a message box saying "coming soon"
+8: The user is shown the description as a question as well as 4 possible answers which are the parent nodes.
+
+9: The user can then choose their answer and then click on the button to enter it.
+
+10: If the answer is incorrect the user is given a new description to attempt the question again.
+
+11: If the answer is correct the question becomes more deatiled by moving deeper into the sub categories and the user is awarded 1 point per correct answer.
+
+12: Users can reset the finding call numbers application by clicking the reset button
 
