@@ -1,0 +1,97 @@
+create database FarmCentral;
+use FarmCentral;
+
+create table tblEmployee(
+username varchar(255),
+password varchar(255)
+);
+
+create table tblFarmers(
+id int IDENTITY(1,1) PRIMARY KEY, 
+fullname varchar(255), 
+username varchar(255), 
+password varchar(255)
+);
+
+create table tblProduct(
+id int IDENTITY(1,1) PRIMARY KEY, 
+name varchar(255), 
+productType varchar(255), 
+price float,
+dateRange date, 
+farmerName varchar(255)
+);
+
+
+INSERT INTO tblEmployee(username, password)
+VALUES ('admin@finance.com', 'iforgot');
+INSERT INTO tblEmployee(username, password)
+VALUES ('admin@marketing.com', 'ineedapassword');
+INSERT INTO tblEmployee(username, password)
+VALUES ('admin@management.com', 'password123');
+
+
+INSERT INTO tblFarmers(fullname, username, password)
+VALUES ('Mac Donald', 'mac@gmail.com', 'farmer1');
+INSERT INTO tblFarmers(fullname, username, password)
+VALUES ('Austin Smith', 'aus@gmail.com', 'farmer2');
+INSERT INTO tblFarmers(fullname, username, password)
+VALUES ('Brook Doe', 'brook@gmail.com', 'farmer3');
+INSERT INTO tblFarmers(fullname, username, password)
+VALUES ('Cooper James', 'coo@gmail.com', 'farmer4');
+INSERT INTO tblFarmers(fullname, username, password)
+VALUES ('Dallas David', 'dal@gmail.com', 'farmer5');
+INSERT INTO tblFarmers(fullname, username, password)
+VALUES ('Finn Mark', 'fin@gmail.com', 'farmer6');
+
+
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Potatoes', 'Vegetable', 17, '2022-6-17', 'Mac Donald');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Green beans', 'Vegetable', 26, '2022-6-16', 'Mac Donald');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Onions', 'Vegetable', 23, '2022-6-15', 'Mac Donald');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Chilies', 'Vegetable', 12, '2022-6-16', 'Mac Donald');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Cabbages', 'Vegetable', 16, '2022-6-17', 'Mac Donald');
+
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Strawberries', 'Fruits', 43, '2022-6-15', 'Brook Doe');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Oranges', 'Fruits', 24, '2022-6-17', 'Brook Doe');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Tomatoes', 'Fruits', 25, '2022-6-16', 'Brook Doe');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Apples', 'Fruits', 20, '2022-6-16', 'Brook Doe');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Blueberries', 'Fruits', 39, '2022-6-15', 'Brook Doe');
+
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Milk', 'Dairy', 15, '2022-6-17', 'Cooper James');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Cheese', 'Dairy', 140, '2022-6-17', 'Cooper James');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Butter', 'Dairy', 89, '2022-6-17', 'Cooper James');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Cream', 'Dairy', 30, '2022-6-17', 'Cooper James');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Yogurt', 'Dairy', 45, '2022-6-17', 'Cooper James');
+
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Beef', 'Meat', 80, '2022-6-16', 'Finn Mark');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Chicken', 'Meat', 45, '2022-6-16', 'Finn Mark');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Pork', 'Meat', 45, '2022-6-17', 'Finn Mark');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Goat', 'Meat', 190, '2022-6-16', 'Finn Mark');
+INSERT INTO tblProduct(name, productType, price, dateRange, farmerName)
+VALUES ('Lamb', 'Meat', 120, '2022-6-17', 'Finn Mark');
+
+select * from tblEmployee;
+
+select * from tblFarmers;
+
+select * from tblProduct;
+
