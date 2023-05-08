@@ -1,10 +1,6 @@
-# pdan8412-task-1-VeronicaCucamonga
-pdan8412-task-1-VeronicaCucamonga created by GitHub Classroom
+# Dewey Decimal System
 
-ST10117256 - Nicole Jade Naidoo
 README FILE
-
-Dewey Decimal Classification System 
 
 The Purpose of the Project
 The purpose of the dewey decimal classification system is to make learning fun and engaging for novice librarians that get bored learning the details of the
